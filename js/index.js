@@ -41,7 +41,8 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-// header selectors
+// Selectors
+  // header
 const navItem1 = document.querySelector('nav a:nth-of-type(1)');
 const navItem2 = document.querySelector('nav a:nth-of-type(2)');
 const navItem3 = document.querySelector('nav a:nth-of-type(3)');
@@ -50,12 +51,12 @@ const navItem5 = document.querySelector('nav a:nth-of-type(5)');
 const navItem6 = document.querySelector('nav a:nth-of-type(6)');
 const headerImg = document.querySelector('#logo-img');
 
-// cta selectors
+  // cta
 const ctaHeader = document.querySelector('.cta h1');
 const ctaButton = document.querySelector('.cta button');
 const ctaImg = document.querySelector('#cta-img');
 
-// main content selectors
+  // main content
 const featureH4 = document.querySelector('.top-content .text-content:nth-of-type(1) h4');
 const featureContent = document.querySelector('.top-content .text-content:nth-of-type(1) p');
 const aboutH4 = document.querySelector('.top-content .text-content:nth-of-type(2) h4');
@@ -68,17 +69,18 @@ const productContent = document.querySelector('.bottom-content .text-content:nth
 const visionH4 = document.querySelector('.bottom-content .text-content:nth-of-type(3) h4');
 const visionContent = document.querySelector('.bottom-content .text-content:nth-of-type(3) p');
 
-// contact selectors
+  // contact
 const contactH4 = document.querySelector('.contact h4');
 const contactAddress = document.querySelector('.contact p:nth-of-type(1)');
 const contactPhone = document.querySelector('.contact p:nth-of-type(2)');
 const contactEmail = document.querySelector('.contact p:nth-of-type(3)');
 
-// footer selectors
+  // footer
 const copyright = document.querySelector('footer p');
 
+
 // Update HTML
-// header
+  // header
 navItem1.textContent = siteContent.nav["nav-item-1"];
 navItem2.textContent = siteContent.nav["nav-item-2"];
 navItem3.textContent = siteContent.nav["nav-item-3"];
@@ -86,12 +88,12 @@ navItem4.textContent = siteContent.nav["nav-item-4"];
 navItem5.textContent = siteContent.nav["nav-item-5"];
 navItem6.textContent = siteContent.nav["nav-item-6"];
 
-// cta
+  // cta
 ctaHeader.textContent = siteContent.cta.h1;
 ctaButton.textContent = siteContent.cta.button;
 ctaImg.src = siteContent.cta["img-src"];
 
-// main
+  // main
 featureH4.textContent = siteContent["main-content"]["features-h4"];
 featureContent.textContent = siteContent["main-content"]["features-content"];
 aboutH4.textContent = siteContent["main-content"]["about-h4"];
@@ -104,11 +106,25 @@ productContent.textContent = siteContent["main-content"]["product-content"];
 visionH4.textContent = siteContent["main-content"]["vision-h4"];
 visionContent.textContent = siteContent["main-content"]["vision-content"];
 
-// contact
+  // contact
 contactH4.textContent = siteContent.contact["contact-h4"];
 contactAddress.textContent = siteContent.contact.address;
 contactPhone.textContent = siteContent.contact.phone;
 contactEmail.textContent = siteContent.contact.email;
 
-//footer
+  //footer
 copyright.textContent = siteContent.footer.copyright;
+
+
+// Add new content
+const nav = document.querySelector('nav');
+navArray = Array.from(nav.querySelectorAll('a'));
+navArray.forEach((a) => a.style.color = 'green');
+const nav1 = document.createElement('a');
+nav1.textContent = 'Nav 1';
+nav1.setAttribute('href', '#');
+nav.appendChild(nav1);
+const nav2 = document.createElement('a');
+nav2.textContent = 'Nav 2';
+nav2.setAttribute('href', '#');
+nav.prepend(nav2);
