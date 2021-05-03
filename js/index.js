@@ -76,3 +76,39 @@ const contactEmail = document.querySelector('.contact p:nth-of-type(3)');
 
 // footer selectors
 const copyright = document.querySelector('footer p');
+
+// Update HTML
+// header
+navItem1.textContent = siteContent.nav["nav-item-1"];
+navItem2.textContent = siteContent.nav["nav-item-2"];
+navItem3.textContent = siteContent.nav["nav-item-3"];
+navItem4.textContent = siteContent.nav["nav-item-4"];
+navItem5.textContent = siteContent.nav["nav-item-5"];
+navItem6.textContent = siteContent.nav["nav-item-6"];
+
+// cta
+ctaHeader.textContent = siteContent.cta.h1;
+ctaButton.textContent = siteContent.cta.button;
+ctaImg.src = siteContent.cta["img-src"];
+
+// main
+featureH4.textContent = siteContent["main-content"]["features-h4"];
+featureContent.textContent = siteContent["main-content"]["features-content"];
+aboutH4.textContent = siteContent["main-content"]["about-h4"];
+aboutContent.textContent = siteContent["main-content"]["about-content"];
+middleImg.src = siteContent["main-content"]["middle-img-src"];
+servicesH4.textContent = siteContent["main-content"]["services-h4"];
+servicesContent.textContent = siteContent["main-content"]["services-content"];
+productH4.textContent = siteContent["main-content"]["product-h4"];
+productContent.textContent = siteContent["main-content"]["product-content"];
+visionH4.textContent = siteContent["main-content"]["vision-h4"];
+visionContent.textContent = siteContent["main-content"]["vision-content"];
+
+// contact
+contactH4.textContent = siteContent.contact["contact-h4"];
+contactAddress.textContent = siteContent.contact.address;
+contactPhone.textContent = siteContent.contact.phone;
+contactEmail.textContent = siteContent.contact.email;
+
+//footer
+copyright.textContent = siteContent.footer.copyright;
