@@ -40,3 +40,39 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+// header selectors
+const navItem1 = document.querySelector('nav a:nth-of-type(1)');
+const navItem2 = document.querySelector('nav a:nth-of-type(2)');
+const navItem3 = document.querySelector('nav a:nth-of-type(3)');
+const navItem4 = document.querySelector('nav a:nth-of-type(4)');
+const navItem5 = document.querySelector('nav a:nth-of-type(5)');
+const navItem6 = document.querySelector('nav a:nth-of-type(6)');
+const headerImg = document.querySelector('#logo-img');
+
+// cta selectors
+const ctaHeader = document.querySelector('.cta h1');
+const ctaButton = document.querySelector('.cta button');
+const ctaImg = document.querySelector('#cta-img');
+
+// main content selectors
+const featureH4 = document.querySelector('.top-content .text-content:nth-of-type(1) h4');
+const featureContent = document.querySelector('.top-content .text-content:nth-of-type(1) p');
+const aboutH4 = document.querySelector('.top-content .text-content:nth-of-type(2) h4');
+const aboutContent = document.querySelector('.top-content .text-content:nth-of-type(2) p');
+const middleImg = document.querySelector('#middle-img');
+const servicesH4 = document.querySelector('.bottom-content .text-content:nth-of-type(1) h4');
+const servicesContent = document.querySelector('.bottom-content .text-content:nth-of-type(1) p');
+const productH4 = document.querySelector('.bottom-content .text-content:nth-of-type(2) h4');
+const productContent = document.querySelector('.bottom-content .text-content:nth-of-type(2) p');
+const visionH4 = document.querySelector('.bottom-content .text-content:nth-of-type(3) h4');
+const visionContent = document.querySelector('.bottom-content .text-content:nth-of-type(3) p');
+
+// contact selectors
+const contactH4 = document.querySelector('.contact h4');
+const contactAddress = document.querySelector('.contact p:nth-of-type(1)');
+const contactPhone = document.querySelector('.contact p:nth-of-type(2)');
+const contactEmail = document.querySelector('.contact p:nth-of-type(3)');
+
+// footer selectors
+const copyright = document.querySelector('footer p');
